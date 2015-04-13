@@ -24,5 +24,4 @@ gulp.task('js', function() {
 gulp.task('watch', function() {
     gulp.watch('assets/**/*.js', ['js']);
 });
-// hello d
 gulp.task('default', ['connect', 'js', 'watch']);
