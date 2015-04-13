@@ -25,5 +25,4 @@ gulp.task('watch', function() {
     gulp.watch('assets/**/*.js', ['js']);
 });
 
-//hi a'm norm
 gulp.task('default', ['connect', 'js', 'watch']);
