@@ -1,5 +1,13 @@
-console.log("hello".length);
+var counter = (function() {
+    var count = 0;
+    return function() {
+        return count++;
+    };
+}());
 
-var hello = function (va1) {
-    this.name = va1;
-};
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
