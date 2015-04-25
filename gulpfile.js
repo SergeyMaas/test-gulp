@@ -20,9 +20,18 @@ gulp.task('js', function() {
         })
         .pipe(connect.reload());
 });
-
+gulp.task('html', function() {
+    gulp.src('public/index.html')
+        .pipe(connect.reload());
+});
+gulp.task('css', function() {
+    gulp.src('public/css/style.css')
+        .pipe(connect.reload());
+});
 gulp.task('watch', function() {
     gulp.watch('assets/**/*.js', ['js']);
+    gulp.watch('public/index.html', ['html']);
+    gulp.watch('public/css/style.css', ['css']);
 });
 
 gulp.task('default', ['connect', 'js', 'watch']);
