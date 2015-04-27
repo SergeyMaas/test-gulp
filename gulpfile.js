@@ -10,7 +10,7 @@ gulp.task('connect', function() {
     });
 });
 
-
+// hello
 gulp.task('js', function() {
     gulp.src('assets/**/*.js')
         .pipe(rename('script.js'))
