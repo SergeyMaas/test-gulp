@@ -10,7 +10,6 @@ gulp.task('connect', function() {
     });
 });
 
-// hello kkds
 gulp.task('js', function() {
     gulp.src('assets/**/*.js')
         .pipe(rename('script.js'))
