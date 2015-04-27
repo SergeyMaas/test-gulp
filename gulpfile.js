@@ -10,6 +10,8 @@ gulp.task('connect', function() {
     });
 });
 
+// TODO: add mix
+
 gulp.task('js', function() {
     gulp.src('assets/**/*.js')
         .pipe(rename('script.js'))
